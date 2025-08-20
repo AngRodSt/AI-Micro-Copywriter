@@ -21,9 +21,7 @@ export default function Page() {
           </svg>
         </div>
 
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          AI Text Generator
-        </h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">CopySmith IA</h1>
 
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
           Create compelling marketing copy and content with AI assistance.
@@ -36,8 +34,15 @@ export default function Page() {
       <CTAEditor />
 
       {/* Footer */}
-      <footer className="text-center mt-16 text-sm text-gray-500">
-        <p>Powered by AI • Generate professional content in seconds</p>
+      <footer className="bg-white border-t border-gray-200 mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="text-center text-gray-500">
+            <p>
+              &copy; 2025 CopySmith AI. Crafting compelling content with
+              artificial intelligence.
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   );
