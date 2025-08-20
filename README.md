@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Micro-Copywriter
 
-## Getting Started
+AI Micro-Copywriter is a tool designed to generate optimized microcopy, such as short headlines, button texts, and notifications, using modern technologies like **Next.js 15**, **TypeScript**, **Tailwind CSS**, and the Hugging Face API. This project is intended for developers, designers, and marketing teams who want to quickly and easily create effective and engaging copy.
 
-First, run the development server:
+## How can it help you?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Time-saving**: Generate multiple text variations in seconds.
+- **Content optimization**: Adjust tone and length to fit different contexts and audiences.
+- **Ease of use**: Copy generated texts directly to your clipboard.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👉 **Live demo**: Explore the tool in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Main features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Generates 3 optimized text variations.
+- Customize tone and content length.
+- Simulate A/B tests to assess effectiveness.
+- Copy-to-clipboard functionality for convenience.
 
-## Learn More
+## Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Create a `.env.local` file and add your API key (`HUGGINGFACE_API_KEY`).
+2. Install dependencies by running: `npm install`.
+3. Start the development environment with: `npm run dev`.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can easily deploy this project using [Vercel](https://vercel.com). Make sure to add `HUGGINGFACE_API_KEY` in the Environment Variables section of your project settings.
