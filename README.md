@@ -8,13 +8,12 @@ AI Micro-Copywriter is a tool designed to generate optimized microcopy, such as 
 - **Content optimization**: Adjust tone and length to fit different contexts and audiences.
 - **Ease of use**: Copy generated texts directly to your clipboard.
 
-👉 **Live demo**: Explore the tool in action.
+👉 **Live demo**: Explore the tool in action. https://ai-micro-copywriter.vercel.app/
 
 ## Main features
 
 - Generates 3 optimized text variations.
 - Customize tone and content length.
-- Simulate A/B tests to assess effectiveness.
 - Copy-to-clipboard functionality for convenience.
 
 ## Setup
