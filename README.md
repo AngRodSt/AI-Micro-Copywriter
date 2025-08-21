@@ -26,3 +26,20 @@ AI Micro-Copywriter is a tool designed to generate optimized microcopy, such as 
 ## Deployment
 
 You can easily deploy this project using [Vercel](https://vercel.com). Make sure to add `HUGGINGFACE_API_KEY` in the Environment Variables section of your project settings.
+
+## Testing
+
+This project has been tested with various scenarios to ensure reliability and performance:
+
+### Unit Testing (Jest)
+- **Component Rendering**: Verified proper rendering of form inputs and generated text outputs
+- **API Integration**: Tested Hugging Face API connectivity and response handling
+- **Text Generation Logic**: Validated text generation with various input parameters and edge cases
+- **Copy-to-Clipboard**: Ensured clipboard functionality works across different browsers
+- **Error Handling**: Verified graceful handling of API errors, network timeouts, and invalid inputs
+
+### End-to-End Testing (Cypress)
+- **Complete User Workflows**: Validated full user journeys from text input to copy generation
+- **Form Interactions**: Tested tone selection, length adjustment, and input validation
+- **Response Handling**: Verified proper display of generated variations and error states
+
