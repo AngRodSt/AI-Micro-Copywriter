@@ -1,6 +1,15 @@
 "use client";
 import React, { useState } from "react";
 
+export function scoreCopy(text: string) {
+  let s = 50;
+  if (text.length < 30) s -= 5;
+  if (text.length > 90) s -= 10;
+  if (/free|now|instant/i.test(text)) s += 10;
+  if (/[!?.]$/.test(text)) s += 3;
+  return Math.max(0, Math.min(100, s));
+}
+
 type Variation = { text: string; score?: number };
 
 export default function CTAEditor() {
@@ -52,15 +61,6 @@ export default function CTAEditor() {
     } finally {
       setLoading(false);
     }
-  }
-
-  function scoreCopy(text: string) {
-    let s = 50;
-    if (text.length < 30) s -= 5;
-    if (text.length > 90) s -= 10;
-    if (/free|now|instant/i.test(text)) s += 10;
-    if (/[!?.]$/.test(text)) s += 3;
-    return Math.max(0, Math.min(100, s));
   }
 
   return (
